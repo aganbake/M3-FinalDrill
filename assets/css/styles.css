@@ -1,0 +1,48 @@
+body {
+  background-color: #35bcbf;
+  text-align: center;
+  padding: 5% 0%;
+  color: white;
+  font-size: 1rem;
+}
+
+.row {
+  padding: 5% 0%;
+}
+
+.add {
+  background-color: lightgreen;
+}
+
+.rest {
+  background-color: lightcoral;
+}
+
+.circle {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 10px solid white;
+  text-align: center;
+  line-height: 250px;
+  overflow: hidden;
+  padding: 3px;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 10px gray;
+  margin: 50px;
+}
+
+.fill {
+  background-color: teal;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.btn {
+  margin-top: 5%;
+}

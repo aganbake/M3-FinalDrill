@@ -18,7 +18,129 @@
 </head>
 
 <body>
+    <section class="top-section" id="navItems">
+        <div class="container-fluid">
+            <h1> Budget App</h1>
+            <!-- Nav Bar -->
+            <!-- <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+                <a class="navbar-brand" href="#">Budget Manager</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"></li>
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        <li class="nav-item"></li>
+                        <a class="nav-link" href="index.html">Ingresos</a>
+                        <li class="nav-item"></li>
+                        <a class="nav-link" href="index.html">Gastos</a>
+                    </ul>
+                </div>
 
+            </nav> -->
+            <!-- Title -->
+
+
+        </div>
+
+    </section>
+
+    <section class="mid-section" id="menuItems">
+
+        <div class="circle">
+            <span class="text"></span>
+            <div class="fill"></div>
+        </div>
+
+        <p>
+            <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Presupuesto
+            </a>
+            <a class="btn btn-outline-danger" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Ingresar Gasto
+            </a>
+        </p>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body add">
+                        <label class="form-label">Ingresa Tu Presupuesto</label>
+                        <input type="text" class="form-control" id="budget">
+                        <button class="btn btn-success" onclick="add()">Añadir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-body rest">
+                        <label class="form-label">Ingresa El Nombre Del Gasto</label>
+                        <input type="text" class="form-control" id="expense">
+                        <label class="form-label">Ingresa La Cantidad Del Gasto</label>
+                        <input type="text" class="form-control" id="expenseAmount">
+                        <button class="btn btn-danger" type="submit" onclick="expense()">Añadir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">PRESUPUESTO</th>
+                                <th scope="col">GASTOS</th>
+                                <th scope="col">SALDOS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="userBudget"></td>
+                                <td id="userExpenses"></td>
+                                <td id="userRemanent"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="botton-section">
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">GASTO</th>
+                                <th scope="col">VALOR</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
