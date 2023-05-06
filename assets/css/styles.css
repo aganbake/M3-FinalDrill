@@ -4,10 +4,11 @@ body {
   padding: 5% 0%;
   color: white;
   font-size: 1rem;
+  align-items: center;
 }
 
 .row {
-  padding: 5% 0%;
+  padding: 2% 0%;
 }
 
 .add {
@@ -43,6 +44,17 @@ body {
   left: 0;
 }
 
-.btn {
-  margin-top: 5%;
+#formButton {
+  margin: 5% 0%;
+  width: 20%;
+}
+
+.bi {
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+}
+
+.card {
+  align-items: center;
 }
