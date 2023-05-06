@@ -35,8 +35,6 @@ const add = () => {
 
   document.getElementById("budget").value = "";
   document.getElementById("circle").style.height = `${fill}%`;
-
-  $(".collpase").collapse("toggle");
 };
 
 const expense = () => {
